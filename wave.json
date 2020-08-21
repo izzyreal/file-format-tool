@@ -1,0 +1,94 @@
+[{
+		"name": "ChunkID",
+		"type": "ascii",
+		"values": ["RIFF"]
+	},
+	{
+		"name": "ChunkSize",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 4
+	},
+	{
+		"name": "Format",
+		"type": "ascii",
+		"values": ["WAVE"]
+	},
+	{
+		"name": "Subchunk1ID",
+		"type": "ascii",
+		"values": ["fmt "]
+	},
+	{
+		"name": "Subchunk1Size",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 4,
+		"values": [16]
+	},
+	{
+		"name": "AudioFormat",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 2,
+		"values": [1]
+	},
+	{
+		"name": "NumChannels",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 2
+	},
+	{
+		"name": "SampleRate",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 4
+	},
+	{
+		"name": "ByteRate",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 4
+	},
+	{
+		"name": "BlockAlign",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 2
+	},
+	{
+		"name": "BitsPerSample",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 2
+	},
+	{
+		"name": "Subchunk2ID",
+		"type": "ascii",
+		"values": ["data"]
+	},
+	{
+		"name": "Subchunk2Size",
+		"type": "int",
+		"signedness": "unsigned",
+		"endianness": "little",
+		"size": 4
+	},
+	{
+		"name": "data",
+		"type": "int[]",
+		"signedness": "signed",
+		"endianness": "little",
+		"element_size": "2",
+		"size": "Subchunk2Size"
+	}
+]
